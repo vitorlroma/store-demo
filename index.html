@@ -1,70 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ball Store</title>
+    <title>PetStore</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/28c5aaabfe.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
     <header>
-        <ul>
-            <li><h1>Welcome to the Ball Store</h1></li>
-            <ul class="user_opt">
-                <li><i class="fas fa-shopping-cart" style="color: #ffffff; font-size: 26px;"></i></li>
-                <li><a href="#">Entrar</a></li>
-            </ul>
-        </ul>
-        
-    </header>
-    <nav>
-        <ul class="index_list">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Football</a></li>
-            <li><a href="#">Basketball</a></li>
-            <li><a href="#">Baseball</a></li>
-            <li><a href="#">Tennis</a></li>
-            <li><a href="#">Golf</a></li>
-        </ul>
-    </nav>
-    <div>
-        <h2>Featured Balls</h2>
-        <p>Check out our selection of high-quality balls for all sports.</p>
-        <p>Featured Products:</p>
-        <ul class="store_list">
-            <li data-title="Football" data-image="assets\footBall.webp"> 
-                <img src="assets\footBall.webp" alt="Football" width="125">
-                <p>Football</p>
-            </li>
-            <li data-title="Basketball" data-image="assets\basketBall.png"> 
-                <img src="assets\basketBall.png" alt="Basketball" width="125">
-                <p>Basketball</p>
-            </li>
-            <li data-title="Baseball" data-image="assets\baseBall.jpg"> 
-                <img src="assets\baseBall.jpg" alt="Baseball" width="125">
-                <p>Baseball</p>
-            </li>
-            <li data-title="Tennisball" data-image="assets\tenisBall.webp"> 
-                <img src="assets\tenisBall.webp" alt="Tennis" width="125">
-                <p>Tennis</p>
-            </li>
-            <li data-title="Golfball" data-image="assets\golfBall.png"> 
-                <img src="assets\golfBall.jpg" alt="Golf" width="125">
-                <p>Golf</p>
-            </li>
-        </ul>
-    </div>
-    <div id="modal" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <h3 id="modal-title"></h3>
-          <img id="modal-image" src="" alt="">
+        <div id="brand">
+            <a href="">
+                <img src="assets/icons/Paomedia-Small-N-Flat-Cat.svg">
+                <h1>PetStore</h1>
+            </a>
         </div>
-      </div>
-    <footer> &copy; 2024 Ball Store. All rights reserved. </footer>
+        <form id="search_bar">
+            <input type="search" placeholder="O que deseja?">
+            <button type="submit"><img src="assets/icons/Colebemis-Feather-Search.svg"></button>
+        </form>
+        <nav id="user_opt">
+            <a href="">
+                <img src="assets/icons/Colebemis-Feather-Shopping-cart.svg">
+            </a>
+            <a href="">
+                <img src="assets/icons/Colebemis-Feather-User.svg">
+            </a>
+        </nav>
+    </header>
+    <main>
+        <h2>About Us</h2>
+        <p>Welcome to My Pet Shop, your one-stop destination for all your pet needs. We offer a wide range of products and services to keep your pets happy and healthy.</p>
+        <h2>Our Services</h2>
+        <ul>
+            <li>Grooming services</li>
+            <li>Training classes</li>
+            <li>Veterinary care</li>
+            <li>Pet boarding</li>
+            <li>Pet supplies</li>
+        </ul>
+        <h2>Featured Products</h2>
+        <div>
+            <h3>Product 1</h3>
+            <p>Description of Product 1.</p>
+            <h3>Product 2</h3>
+            <p>Description of Product 2.</p>
+            <h3>Product 3</h3>
+            <p>Description of Product 3.</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Pet Shop. All rights reserved.</p>
+    </footer>
 </body>
-
 </html>
