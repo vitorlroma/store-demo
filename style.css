@@ -1,7 +1,30 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
+  height: 100vh;
+  margin: auto;
+  padding: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+a:link ,a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a img{
+  align-self: center;
+  object-fit: contain;
+}
+
+nav ul {
   padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+ul li {
+  list-style: none;
 }
 
 header {
@@ -22,18 +45,12 @@ header {
 }
 
 #brand a{
-  color: white;
   align-items: center;
   display: flex;
 }
 
-#brand a:link, #brand a:visited{
-  text-decoration: none;
-}
-
 #brand a img {
   padding: 10px;
-  object-fit: contain;
 }
 
 #search_bar {
@@ -79,8 +96,8 @@ input[type="search"]:focus {
 }
 
 #user_opt {
-  padding: 20px;
   grid-area: user_opt;
+  padding: 20px;
   align-self: center;
 }
 
@@ -88,49 +105,33 @@ input[type="search"]:focus {
   padding: 5px;
 }
 
-#user_opt a img {
-  align-self: center;
-  object-fit: contain;
-}
-
 #store_opt {
   grid-area: store_opt;
   background-color: grey;
 }
 
-#store_opt ul {
-  display: flex;
-  justify-content: center;
-}
-
 #store_opt ul li {
   margin: 5px;
-  list-style: none;
 }
 
 h1 {
   margin: 5px;
 }
 
-main {
-  padding-bottom: 5rem;
-  padding: 20px;
-}
 
 footer {
-  position: absolute;
-  bottom: 0;
+  margin-top: auto;
   width: 100%;
-  height: 8rem;
+  height: 10rem;
   background-color: #333;
   color: #fff;
-  padding: 20px;
   text-align: center;
 }
 
 footer nav {
+  padding: 10px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 3rem 3rem 2rem;
   grid-template-areas: 
     "footer_title1 footer_title2 footer_title3"
@@ -149,30 +150,27 @@ footer nav {
 .footer_title3 {
   grid-area: footer_title3;
 }
-#about_us, #social, #privacy {
-  list-style: none;
-}
 
 #about_us {
   grid-area: about_us;
+  flex-direction: column;
 }
 
 #privacy {
   grid-area: privacy;
 }
 
-#social {
-  grid-area: social;
-  display: flex;
-  justify-content: center;
-}
-
 #rights {
   grid-area: rights;
 }
 
-#about_us li a:link, #social li a:link ,#about_us li a:visited, #social li a:visited {
-  padding: 10px;
-  color: white;
-  text-decoration: none;
+#social {
+  grid-area: social;
+}
+
+#social li {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 10px;
+  margin-right: 10px;
 }
